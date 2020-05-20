@@ -5,6 +5,7 @@ title = "Okkur - Syna"
 theme = "syna"
 enableGitInfo = true
 version = "0.17.2"
+DefaultContentLanguage = "en"
 
 # Google Analytics tracking
 googleAnalytics = ""
@@ -26,6 +27,7 @@ lastmod = ["lastmod", ":git", "date"]
 [params]
   name = "Okkur Labs"
   description = "Open Source Theme for your next project"
+  DefaultContentLanguage = "en"
 
   [params.style]
     #background = "secondary"
@@ -62,57 +64,95 @@ lastmod = ["lastmod", ":git", "date"]
     light = "#f8f9fa"
     dark = "#343a40"
 
-# main/prepend/postpend menus are displayed in nav fragment.
-# Keep an eye out for updates. These will be moved out to make navbar more
-# configurable.
-[[menu.main]]
-  url = "/"
-  name = "Home"
-  weight = 10
+[languages]
+  [languages.en]
+    title = "English title"
+    weight = 1
+    [[languages.en.menu.main]]
+      url = "/"
+      name = "Home"
+      weight = 10
+    [[languages.en.menu.main]]
+      url = "/about"
+      name = "About Us"
+      weight = 20
+    [[languages.en.menu.main]]
+      url = "#contact"
+      name = "Contact"
+      weight = 30
+    [[languages.en.menu.footer]]
+      url = "#"
+      name = "Link"
+      weight = 10
+    [[languages.en.menu.footer]]
+      url = "#"
+      name = "Long Link"
+      weight = 30
+    [[languages.en.menu.footer]]
+      url = "#"
+      name = "Tiny Link"
+      weight = 30
+    [[languages.en.menu.copyright_footer]]
+      url = "/about"
+      name = "About Us"
+      weight = 10
+    [[languages.en.menu.copyright_footer]]
+      url = "#"
+      name = "Another Link"
+      weight = 30
+    [[languages.en.menu.footer_social]]
+      weight = 20
+      name = "facebook"
+      pre = "fab fa-facebook-f"
+      url = "#"
+    [[languages.en.menu.footer_social]]
+      weight = 30
+      name = "linkedin"
+      pre = "fab fa-linkedin-in"
+      url = "#"
 
-[[menu.main]]
-  url = "/about"
-  name = "About Us"
-  weight = 20
-
-[[menu.main]]
-  url = "#contact"
-  name = "Contact"
-  weight = 30
-
-[[menu.footer]]
-  url = "#"
-  name = "Link"
-  weight = 10
-
-[[menu.footer]]
-  url = "#"
-  name = "Long Link"
-  weight = 30
-
-[[menu.footer]]
-  url = "#"
-  name = "Tiny Link"
-  weight = 30
-
-[[menu.copyright_footer]]
-  url = "/about"
-  name = "About Us"
-  weight = 10
-
-[[menu.copyright_footer]]
-  url = "#"
-  name = "Another Link"
-  weight = 30
-
-[[menu.footer_social]]
-  weight = 20
-  name = "facebook"
-  pre = "fab fa-facebook-f"
-  url = "#"
-
-[[menu.footer_social]]
-  weight = 30
-  name = "linkedin"
-  pre = "fab fa-linkedin-in"
-  url = "#"
+  [languages.de]
+    title = "Deutscher Titel"
+    weight = 2
+    [[languages.de.menu.main]]
+      url = "/"
+      name = "Zuhause"
+      weight = 10
+    [[languages.de.menu.main]]
+      url = "/about"
+      name = "Über uns"
+      weight = 20
+    [[languages.de.menu.main]]
+      url = "#contact"
+      name = "Kontakt"
+      weight = 30
+    [[languages.de.menu.footer]]
+      url = "#"
+      name = "Link"
+      weight = 10
+    [[languages.de.menu.footer]]
+      url = "#"
+      name = "Langer Link"
+      weight = 30
+    [[languages.de.menu.footer]]
+      url = "#"
+      name = "Winziger Link"
+      weight = 30
+    [[languages.de.menu.copyright_footer]]
+      url = "/about"
+      name = "Über uns"
+      weight = 10
+    [[languages.de.menu.copyright_footer]]
+      url = "#"
+      name = "Anderer Link"
+      weight = 30
+    [[languages.de.menu.footer_social]]
+      weight = 20
+      name = "facebook"
+      pre = "fab fa-facebook-f"
+      url = "#"
+    [[languages.de.menu.footer_social]]
+      weight = 30
+      name = "linkedin"
+      pre = "fab fa-linkedin-in"
+      url = "#"
