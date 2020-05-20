@@ -5,6 +5,7 @@ title = "Okkur - Syna"
 theme = "syna"
 enableGitInfo = true
 version = "0.17.0"
+DefaultContentLanguage = "en"
 
 # Google Analytics tracking
 googleAnalytics = ""
@@ -24,6 +25,7 @@ lastmod = ["lastmod", ":git", "date"]
 [params]
   name = "Okkur Labs"
   description = "Open Source Theme for your next project"
+  DefaultContentLanguage = "en"
 
   [params.style]
     #background = "secondary"
@@ -114,3 +116,8 @@ lastmod = ["lastmod", ":git", "date"]
   name = "linkedin"
   pre = "fab fa-linkedin-in"
   url = "#"
+
+[languages]
+  [languages.en]
+    title = "English title"
+    weight = 1
