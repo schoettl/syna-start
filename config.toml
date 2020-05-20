@@ -121,3 +121,6 @@ lastmod = ["lastmod", ":git", "date"]
   [languages.en]
     title = "English title"
     weight = 1
+  [languages.de]
+    title = "Deutscher Titel"
+    weight = 2
